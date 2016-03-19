@@ -1,0 +1,15 @@
+.DS_STORE
+*.log
+
+#node_modules
+
+#dist
+coverage
+src/static/upload
+
+#!node_modules/quill
+
+!/node_modules
+/node_modules/*
+!/node_modules/quill
+!/node_modules/quill/dist
