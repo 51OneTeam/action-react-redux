@@ -1,0 +1,65 @@
+$deepYellow: #f7a708;
+
+.buttonsRow, .buttonsTab {
+    -webkit-align-self: center;
+    align-self: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.buttonsRow .button:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+    margin-left: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+.buttonsRow .button.active {
+    background-color: $deepYellow;
+    color: black;
+    z-index: 90;
+}
+.buttonsRow .button {
+    border-radius: 0 0 0 0;
+    margin-left: -1px;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    border-color: $deepYellow;
+    color: white;
+}
+.button.active, .button.active:active {
+    color: #0a8ddf;
+}
+.button {
+    border: 1px solid $deepYellow;
+    color: $deepYellow;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    line-height: 40px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: none;
+    margin: 0;
+    height: 40px;
+    white-space: nowrap;
+    position: relative;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+}
+a {
+    color: $deepYellow;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
