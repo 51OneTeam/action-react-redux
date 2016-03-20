@@ -5,8 +5,6 @@ import { connect } from 'react-redux'
 import RaisedButton from 'material-ui/lib/raised-button'
 import CircularProgress from 'material-ui/lib/circular-progress'
 import Dropzone from 'react-dropzone'
-import ReactQuill from 'react-quill'
-console.log('ReactQuill:', ReactQuill)
 import { redirect, changeStatus, syncFetchData, upload } from 'redux/modules/demo'
 
 // We avoid using the `@connect` decorator on the class definition so
@@ -57,11 +55,6 @@ export class DemoView extends React.Component<void, Props, void> {
             <div style={{margin: '80px 65px'}}>图片上传</div>
           </Dropzone>
           <div>{this.renderUploadData()}</div>
-        </div>
-        <div className='demo-editor'>
-          <div>编辑器</div>
-          <ReactQuill className='editor' theme={'snow'} style={{height: '400px'}} enabled onChange={this.handleText} readOnly={false} value={'<h1>It works!</h1>'}/>
-          <button onClick={this.handleText}>提交</button>
         </div>
       </div>
     )
